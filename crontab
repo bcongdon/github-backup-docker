@@ -1,2 +1,2 @@
 PYTHONPATH=/usr/local/lib/python2.7/site-packages
-* * * * * . /tmp/.env; python /usr/local/bin/github-backup $GITHUB_USERNAME -o /storage -t $GITHUB_TOKEN --repositories >> /var/log/cron.log 2>&1
+0 */6 * * * . /tmp/.env; python /usr/local/bin/github-backup $GITHUB_USERNAME -o /storage -t $GITHUB_TOKEN --repositories >> /var/log/cron.log 2>&1
