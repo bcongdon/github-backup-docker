@@ -12,4 +12,6 @@ ENV GITHUB_TOKEN CHANGE_ME
 
 ENV GITHUB_USERNAME CHANGE_ME
 
+RUN mkdir /storage
+
 CMD env > /tmp/.env && crontab /usr/src/crontab && cron -f
